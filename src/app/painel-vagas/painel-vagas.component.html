@@ -1,0 +1,39 @@
+<h2>Cadastrar</h2>
+
+<form>
+  <table>
+    <tr>
+      <td>ID</td>
+      <td><input type="text" name="id" required [(ngModel)]="vaga.id" /></td>
+    </tr>
+    <tr>
+      <td>Nome</td>
+      <td><input type="text" name="nome" required [(ngModel)]="vaga.nome" /></td>
+    </tr>
+    <tr>
+      <td>Foto</td>
+      <td><input type="text" name="foto" required [(ngModel)]="vaga.foto" /></td>
+    </tr>
+    <tr>
+      <td>Descrição</td>
+      <td>
+        <input type="text" name="descricao" required [(ngModel)]="vaga.descricao" />
+      </td>
+    </tr>
+    <tr>
+      <td>Salário</td>
+      <td>
+        <input type="text" name="salario" required [(ngModel)]="vaga.salario" />
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">&nbsp;</td>
+    </tr>
+    <tr>
+      <th colspan="2"></th>
+    </tr>
+  </table>
+  <input id="btn_Send" type="submit" onclick="cadastrar()" value="Enviar" />
+  <input id="btn_Send" type="submit" onclick="atualizar(vaga.id)" value="Enviar" />
+  <input id="btn_Send" type="submit" onclick="excluir(vaga.id)" value="Enviar" />
+</form>

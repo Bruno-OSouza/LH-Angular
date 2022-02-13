@@ -1,0 +1,18 @@
+<section class="lista-vagas">
+  <div *ngFor="let vaga of vaga">
+    <div class="card" style="width: 18rem">
+      <img
+        src="assets/img/vagas/{{ vaga.foto }}"
+        class="card-img-top"
+        alt="programador"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Código da vaga: {{ vaga.id }}</h5>
+        <h5 class="card-title">Vaga: {{ vaga.id }}</h5>
+        <p class="card-text">Descrição da vaga: {{ vaga.descricao }}</p>
+        <p class="card-text">Salário: R${{ vaga.salario }},00</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+</section>
